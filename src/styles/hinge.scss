@@ -1,0 +1,40 @@
+@import "compass";
+@import "animate";
+
+@include animate-special(hinge);
+
+.hinge {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+    .message {
+        -webkit-transform: translate3d(0, 0, 0);
+        display: none;
+        z-index: 0;
+        position: absolute;
+        top: 35%;
+        opacity: 1;
+        min-height: 14em;
+
+        &.focus {
+            display: block;
+            z-index: 2;
+        }
+
+        &.next-one {
+            display: block;
+            z-index: 1;
+        }
+
+        &.prev-one {
+            display: block;
+            z-index: 3;
+            @include animation(hinge 2s 1);
+            @include animation-fill-mode(forwards);
+        }
+    }
+}

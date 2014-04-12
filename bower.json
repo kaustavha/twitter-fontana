@@ -1,0 +1,21 @@
+{
+  "name": "twitter-fontana",
+  "version": "2.0.1",
+  "authors": [
+    "Kaustav Haldar <kaustav_2007@hotmail.com>",
+    "EightMedia gh:[jaap3, jtangelder, Aratramba]"
+  ],
+  "description": "Fancy Twitter Wall",
+  "main": "dist/twitterfontana.js",
+  "license": "MIT",
+  "homepage": "https://github.com/kaustavha/TwitterFontana",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+  "jquery": "2.1.0",
+  "twitter-text": "1.9.0"
+  }
+}

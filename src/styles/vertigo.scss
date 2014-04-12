@@ -1,0 +1,33 @@
+@import "compass";
+
+.vertigo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+    .message {
+        -webkit-transform: translate3d(0, 0, 0);
+        z-index: 0;
+        position: absolute;
+        top: 35%;
+        opacity: 0;
+        @include transform(scale(10) rotate(-720deg));
+        @include transition-property(transform opacity);
+        @include transition-duration(1s);
+
+        &.focus {
+            z-index: 2;
+            opacity: 1;
+            @include transform(scale(1) rotate(0deg));
+            @include transition-delay(.5s);
+        }
+
+        &.prev-one {
+            z-index: 1;
+            @include transform(scale(0) rotate(720deg));
+        }
+    }
+}

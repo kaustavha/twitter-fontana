@@ -1,0 +1,29 @@
+@import "compass";
+@import "animate";
+
+@include animate-lightSpeed(in out);
+
+.lightspeed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+    .message {
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 0;
+        position: absolute;
+        top: 35%;
+
+        &.focus {
+            @include animation(lightSpeedIn .75s 1);
+            opacity: 1;
+        }
+
+        &.prev-one {
+            @include animation(lightSpeedOut .75s 1);
+        }
+    }
+}

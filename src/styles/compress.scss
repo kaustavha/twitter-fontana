@@ -1,0 +1,36 @@
+@import "compass";
+
+.compress {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+
+    .message {
+        -webkit-transform: translate3d(0, 0, 0);
+        position: absolute;
+        top: 35%;
+        opacity: 0;
+        @include transition-property(opacity transform);
+        @include transition-duration(.5s);
+        @include transform(scale(0));
+
+        &.prev-one {
+            @include transform(rotateX(90deg));
+            opacity: 0;
+        }
+
+        &.next-one {
+            @include transform(rotateX(90deg));
+            opacity: 0;
+        }
+
+        &.focus {
+            opacity: 1;
+            @include transform(rotateX(0));
+            @include transition-delay(.5s);
+        }
+    }
+}
