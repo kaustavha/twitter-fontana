@@ -6,9 +6,9 @@
     "EightMedia gh:[jaap3, jtangelder, Aratramba]"
   ],
   "description": "Fancy Twitter Wall",
-  "main": "dist/twitterfontana.js",
+  "main": "dist/twitterfontana.min.js ",
   "license": "MIT",
-  "homepage": "https://github.com/kaustavha/TwitterFontana",
+  "homepage": "https://github.com/kaustavha/twitter-fontana",
   "ignore": [
     "**/.*",
     "node_modules",
