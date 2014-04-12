@@ -8,7 +8,7 @@
   "description": "Fancy Twitter Wall",
   "main": "dist/twitterfontana.min.js ",
   "license": "MIT",
-  "homepage": "https://github.com/kaustavha/twitter-fontana",
+  "homepage": "https://github.com/EightMedia/TwitterFontana",
   "ignore": [
     "**/.*",
     "node_modules",
