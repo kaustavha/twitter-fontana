@@ -2,7 +2,7 @@
 
 Twitter search API data visualization tool. So for awesome tweet walls and such.  
 
-**Disclaimer:** I did not write the majority of this library, credits go to the people at EightMedia  
+**Disclaimer:** I did not write the majority of this library, all credits go to the fine folks at [EightMedia](https://github.com/EightMedia)  
 
 ## Example: 
 
